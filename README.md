@@ -32,4 +32,7 @@ run\_analysis() performs the following steps:
         2. 'activity' from y\_\*.txt, mapped through activity\_labels
         3. 'case' to reflect "train" or "test".
 5. rbind() both cases into a single data frame
+6. melt() the data.frame to "long form".
+7. dcast long form back into wide form, applying mean on every observation value.
+
 
